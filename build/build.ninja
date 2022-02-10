@@ -21,7 +21,7 @@ rule cuda_LINKER
  description = Linking target $out
 
 rule SHSYM
- command = /group/director2183/dancpr/.local/bin/meson --internal symbolextractor /group/director2183/dancpr/src/bf_plugins/btcc/build $in $IMPLIB $out $CROSS
+ command = /group/director2183/dancpr/.local/bin/meson --internal symbolextractor /group/director2183/ldryan0/btcc/build $in $IMPLIB $out $CROSS
  description = Generating symbol file $out
  restat = 1
 
@@ -33,7 +33,7 @@ rule CUSTOM_COMMAND
  restat = 1
 
 rule REGENERATE_BUILD
- command = /group/director2183/dancpr/.local/bin/meson --internal regenerate /group/director2183/dancpr/src/bf_plugins/btcc /group/director2183/dancpr/src/bf_plugins/btcc/build --backend ninja
+ command = /group/director2183/dancpr/.local/bin/meson --internal regenerate /group/director2183/ldryan0/btcc /group/director2183/ldryan0/btcc/build --backend ninja
  description = Regenerating build files.
  generator = 1
 
@@ -89,13 +89,13 @@ build dist: phony meson-dist
 # Suffix
 
 build meson-TAGS: CUSTOM_COMMAND PHONY
- COMMAND = /group/director2183/dancpr/.local/bin/meson --internal tags etags /group/director2183/dancpr/src/bf_plugins/btcc
+ COMMAND = /group/director2183/dancpr/.local/bin/meson --internal tags etags /group/director2183/ldryan0/btcc
  pool = console
 
 build TAGS: phony meson-TAGS
 
 build meson-ctags: CUSTOM_COMMAND PHONY
- COMMAND = /group/director2183/dancpr/.local/bin/meson --internal tags ctags /group/director2183/dancpr/src/bf_plugins/btcc
+ COMMAND = /group/director2183/dancpr/.local/bin/meson --internal tags ctags /group/director2183/ldryan0/btcc
  pool = console
 
 build ctags: phony meson-ctags

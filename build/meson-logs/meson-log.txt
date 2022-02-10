@@ -1,76 +1,80 @@
-Build started at 2022-02-04T20:18:22.089012
+Build started at 2022-02-10T13:45:18.477551
 Main binary: /pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/bin/python3.6
 Build Options: 
 Python system: Linux
 The Meson build system
 Version: 0.57.2
-Source dir: /group/director2183/dancpr/src/bf_plugins/btcc
-Build dir: /group/director2183/dancpr/src/bf_plugins/btcc/build
+Source dir: /group/director2183/ldryan0/btcc
+Build dir: /group/director2183/ldryan0/btcc/build
 Build type: native build
 Project name: btcc
 Project version: 0.0.2
 Sanity testing C++ compiler: g++
 Is cross compiler: False.
-Sanity check compiler command line: g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.cc -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compiler command line: g++ /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcpp.cc -o /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
 Sanity check compile stdout:
 
 -----
 Sanity check compile stderr:
 
 -----
-Running test binary command: /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe
+Running test binary command: /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: g++ (gcc 8.3.0 "g++ (GCC) 8.3.0")
 C++ linker for the host machine: g++ ld.bfd 2.27-34
 Sanity testing Cuda compiler: nvcc
 Is cross compiler: False.
-Sanity check compiler command line:  nvcc -w -cudart static /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.cu -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe
+Sanity check compiler command line:  nvcc -w -cudart static /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcuda.cu -o /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcuda.exe
 Sanity check compile stdout: 
 
 -----
 Sanity check compile stderr:
 
 -----
-Sanity check run command line:  nvcc --run "/group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe"
+Sanity check run command line:  nvcc --run "/group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcuda.exe"
 Sanity check run stdout: 
-7.0
 
 -----
 Sanity check run stderr:
+35
 
 -----
+cudaGetDeviceCount() returned 35
+
 Cuda compiler for the host machine: nvcc (nvcc 11.1.105
 Build cuda_11.1.TC455_06.29190527_0)
 Cuda linker for the host machine: nvcc nvlink 11.1.105
 Build cuda_11.1.TC455_06.29190527_0
 Sanity testing C++ compiler: g++
 Is cross compiler: False.
-Sanity check compiler command line: g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.cc -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compiler command line: g++ /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcpp.cc -o /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
 Sanity check compile stdout:
 
 -----
 Sanity check compile stderr:
 
 -----
-Running test binary command: /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe
+Running test binary command: /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the build machine: g++ (gcc 8.3.0 "g++ (GCC) 8.3.0")
 C++ linker for the build machine: g++ ld.bfd 2.27-34
 Sanity testing Cuda compiler: nvcc
 Is cross compiler: False.
-Sanity check compiler command line:  nvcc -w -cudart static /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.cu -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe
+Sanity check compiler command line:  nvcc -w -cudart static /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcuda.cu -o /group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcuda.exe
 Sanity check compile stdout: 
 
 -----
 Sanity check compile stderr:
 
 -----
-Sanity check run command line:  nvcc --run "/group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe"
+Sanity check run command line:  nvcc --run "/group/director2183/ldryan0/btcc/build/meson-private/sanitycheckcuda.exe"
 Sanity check run stdout: 
-7.0
 
 -----
 Sanity check run stderr:
+35
 
 -----
+cudaGetDeviceCount() returned 35
+
 Cuda compiler for the build machine: nvcc (nvcc 11.1.105
 Build cuda_11.1.TC455_06.29190527_0)
 Cuda linker for the build machine: nvcc nvlink 11.1.105
@@ -107,8 +111,8 @@ PKG_CONFIG_PATH: /group/director2183/dancpr/software/centos7.6/apps/cascadelake/
 Called `/usr/bin/pkg-config --libs bifrost` -> 0
 -L/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib -lbifrost
 Running compile:
-Working directory:  /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmpg8qhpnds
-Command line:  g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmpg8qhpnds/testfile.cpp -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmpg8qhpnds/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+Working directory:  /group/director2183/ldryan0/btcc/build/meson-private/tmppi9cheib
+Command line:  g++ /group/director2183/ldryan0/btcc/build/meson-private/tmppi9cheib/testfile.cpp -o /group/director2183/ldryan0/btcc/build/meson-private/tmppi9cheib/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
 
 Code:
  #include<stdio.h>
@@ -129,8 +133,8 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmplau3s1iz
-Command line:  g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmplau3s1iz/testfile.cpp -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmplau3s1iz/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /group/director2183/ldryan0/btcc/build/meson-private/tmpd741a4gu
+Command line:  g++ /group/director2183/ldryan0/btcc/build/meson-private/tmpd741a4gu/testfile.cpp -o /group/director2183/ldryan0/btcc/build/meson-private/tmpd741a4gu/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
@@ -143,17 +147,18 @@ Compiler stderr:
  
 Run-time dependency bifrost found: YES 0.9.0
 Library libtcc found: YES
-Running command: /group/director2183/dancpr/src/bf_plugins/btcc/./generate_wrapper.py src/btcc -o /group/director2183/dancpr/src/bf_plugins/btcc/build
+Running command: /group/director2183/ldryan0/btcc/./generate_wrapper.py src/btcc -o /group/director2183/ldryan0/btcc/build
 --- stdout ---
 Python 3.6.3
 Generating btcc_generated.py...
 
 --- stderr ---
-INFO: Status: Preprocessing /tmp/tmpimxzt9rg.h
-INFO: Status: gcc -E -U __GNUC__ -dD -I"." -I"/group/director2183/dancpr/src/bf_plugins/btcc" "-Dinline=" "-D__inline__=" "-D__extension__=" "-D__const=const" "-D__asm__(x)=" "-D__asm(x)=" "-DCTYPESGEN=1" "/tmp/tmpimxzt9rg.h"
-INFO: Status: Parsing /tmp/tmpimxzt9rg.h
+INFO: Status: Preprocessing /tmp/tmpyplsu1ak.h
+INFO: Status: gcc -E -U __GNUC__ -dD -I"." -I"/group/director2183/ldryan0/btcc" "-Dinline=" "-D__inline__=" "-D__extension__=" "-D__const=const" "-D__asm__(x)=" "-D__asm(x)=" "-DCTYPESGEN=1" "/tmp/tmpyplsu1ak.h"
+INFO: Status: Parsing /tmp/tmpyplsu1ak.h
 INFO: Status: Processing description list.
-INFO: Status: Writing to /group/director2183/dancpr/src/bf_plugins/btcc/build/btcc_generated.py.
+WARNING: Could not load library "btcc". Okay, I'll try to load it at runtime instead. 
+INFO: Status: Writing to /group/director2183/ldryan0/btcc/build/btcc_generated.py.
 INFO: Status: Wrapping complete.
 
 

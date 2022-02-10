@@ -1,7 +1,7 @@
 r"""Wrapper for btcc.h
 
 Generated with:
--c -lbtcc -I. -I/group/director2183/dancpr/src/bf_plugins/btcc src/btcc.h -o /group/director2183/dancpr/src/bf_plugins/btcc/build/btcc_generated.py
+-c -lbtcc -I. -I/group/director2183/ldryan0/btcc src/btcc.h -o /group/director2183/ldryan0/btcc/build/btcc_generated.py
 
 Do not modify this file.
 """
@@ -886,17 +886,41 @@ enum_BFdtype_ = c_int# /group/director2183/dancpr/software/centos7.6/apps/cascad
 BFdtype = enum_BFdtype_# /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include/bifrost/array.h: 91
 
 # /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include/bifrost/array.h: 128
-from bifrost.libbifrost_generated import struct_BFarray_
+class struct_BFarray_(Structure):
+    pass
+
+struct_BFarray_.__slots__ = [
+    'data',
+    'space',
+    'dtype',
+    'ndim',
+    'shape',
+    'strides',
+    'immutable',
+    'big_endian',
+    'conjugated',
+]
+struct_BFarray_._fields_ = [
+    ('data', POINTER(None)),
+    ('space', BFspace),
+    ('dtype', BFdtype),
+    ('ndim', c_int),
+    ('shape', c_long * int(BF_MAX_DIMS)),
+    ('strides', c_long * int(BF_MAX_DIMS)),
+    ('immutable', BFbool),
+    ('big_endian', BFbool),
+    ('conjugated', BFbool),
+]
 
 BFarray = struct_BFarray_# /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include/bifrost/array.h: 128
 
-# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 38
+# /group/director2183/ldryan0/btcc/src/btcc.h: 38
 class struct_btcc_impl(Structure):
     pass
 
-btcc = POINTER(struct_btcc_impl)# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 38
+btcc = POINTER(struct_btcc_impl)# /group/director2183/ldryan0/btcc/src/btcc.h: 38
 
-# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 40
+# /group/director2183/ldryan0/btcc/src/btcc.h: 40
 for _lib in _libs.values():
     if not _lib.has("BTccCreate", "cdecl"):
         continue
@@ -905,7 +929,7 @@ for _lib in _libs.values():
     BTccCreate.restype = BFstatus
     break
 
-# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 41
+# /group/director2183/ldryan0/btcc/src/btcc.h: 41
 for _lib in _libs.values():
     if not _lib.has("BTccInit", "cdecl"):
         continue
@@ -914,7 +938,7 @@ for _lib in _libs.values():
     BTccInit.restype = BFstatus
     break
 
-# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 47
+# /group/director2183/ldryan0/btcc/src/btcc.h: 47
 for _lib in _libs.values():
     if not _lib.has("BTccSetStream", "cdecl"):
         continue
@@ -923,7 +947,7 @@ for _lib in _libs.values():
     BTccSetStream.restype = BFstatus
     break
 
-# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 49
+# /group/director2183/ldryan0/btcc/src/btcc.h: 49
 for _lib in _libs.values():
     if not _lib.has("BTccDestroy", "cdecl"):
         continue
@@ -932,7 +956,7 @@ for _lib in _libs.values():
     BTccDestroy.restype = BFstatus
     break
 
-# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 50
+# /group/director2183/ldryan0/btcc/src/btcc.h: 50
 for _lib in _libs.values():
     if not _lib.has("BTccExecute", "cdecl"):
         continue
@@ -941,7 +965,7 @@ for _lib in _libs.values():
     BTccExecute.restype = BFstatus
     break
 
-btcc_impl = struct_btcc_impl# /group/director2183/dancpr/src/bf_plugins/btcc/src/btcc.h: 38
+btcc_impl = struct_btcc_impl# /group/director2183/ldryan0/btcc/src/btcc.h: 38
 
 # No inserted files
 

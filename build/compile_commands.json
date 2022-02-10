@@ -1,6 +1,6 @@
 [
   {
-    "directory": "/group/director2183/dancpr/src/bf_plugins/btcc/build",
+    "directory": "/group/director2183/ldryan0/btcc/build",
     "command": "nvcc -Xcompiler=-Wall,-Winvalid-pch,-Wnon-virtual-dtor -g -G -g -Xcompiler=-fPIC -I/pawsey/centos7.6/devel/binary/cuda/11.1/include -I/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include -I/group/director2183/dancpr/src/tensor-core-correlator/test/Common -I/group/director2183/dancpr/src/tensor-core-correlator/test/Common -I/group/director2183/dancpr/src/tensor-core-correlator/util -I/group/director2183/dancpr/src/tensor-core-correlator/util -I/group/director2183/dancpr/src/tensor-core-correlator -I/group/director2183/dancpr/src/tensor-core-correlator -I/group/director2183/dancpr/src/bifrost/src/cuda -I/group/director2183/dancpr/src/bifrost/src/cuda -I/group/director2183/dancpr/src/bifrost/src/bifrost -I/group/director2183/dancpr/src/bifrost/src/bifrost -I/group/director2183/dancpr/src/bifrost/src -I/group/director2183/dancpr/src/bifrost/src -I.. -I. -Ilibbtcc.so.0.0.2.p -Ilibbtcc.so.0.0.2.p -o libbtcc.so.0.0.2.p/src_btcc.cu.o -c ../src/btcc.cu",
     "file": "../src/btcc.cu"
   }

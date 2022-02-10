@@ -1,0 +1,164 @@
+Build started at 2022-02-04T20:18:22.089012
+Main binary: /pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/bin/python3.6
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.57.2
+Source dir: /group/director2183/dancpr/src/bf_plugins/btcc
+Build dir: /group/director2183/dancpr/src/bf_plugins/btcc/build
+Build type: native build
+Project name: btcc
+Project version: 0.0.2
+Sanity testing C++ compiler: g++
+Is cross compiler: False.
+Sanity check compiler command line: g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.cc -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: g++ (gcc 8.3.0 "g++ (GCC) 8.3.0")
+C++ linker for the host machine: g++ ld.bfd 2.27-34
+Sanity testing Cuda compiler: nvcc
+Is cross compiler: False.
+Sanity check compiler command line:  nvcc -w -cudart static /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.cu -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe
+Sanity check compile stdout: 
+
+-----
+Sanity check compile stderr:
+
+-----
+Sanity check run command line:  nvcc --run "/group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe"
+Sanity check run stdout: 
+7.0
+
+-----
+Sanity check run stderr:
+
+-----
+Cuda compiler for the host machine: nvcc (nvcc 11.1.105
+Build cuda_11.1.TC455_06.29190527_0)
+Cuda linker for the host machine: nvcc nvlink 11.1.105
+Build cuda_11.1.TC455_06.29190527_0
+Sanity testing C++ compiler: g++
+Is cross compiler: False.
+Sanity check compiler command line: g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.cc -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: g++ (gcc 8.3.0 "g++ (GCC) 8.3.0")
+C++ linker for the build machine: g++ ld.bfd 2.27-34
+Sanity testing Cuda compiler: nvcc
+Is cross compiler: False.
+Sanity check compiler command line:  nvcc -w -cudart static /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.cu -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe
+Sanity check compile stdout: 
+
+-----
+Sanity check compile stderr:
+
+-----
+Sanity check run command line:  nvcc --run "/group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/sanitycheckcuda.exe"
+Sanity check run stdout: 
+7.0
+
+-----
+Sanity check run stderr:
+
+-----
+Cuda compiler for the build machine: nvcc (nvcc 11.1.105
+Build cuda_11.1.TC455_06.29190527_0)
+Cuda linker for the build machine: nvcc nvlink 11.1.105
+Build cuda_11.1.TC455_06.29190527_0
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+meson.build:8: WARNING: Module unstable-cuda has no backwards or forwards compatibility and might not exist in future releases.
+Default path env var: CUDA_HOME
+nvcc version: 11.1
+Could not read CUDA Toolkit's version file /pawsey/centos7.6/devel/binary/cuda/11.1/version.txt: [Errno 2] No such file or directory: '/pawsey/centos7.6/devel/binary/cuda/11.1/version.txt'
+Search paths: [('/pawsey/centos7.6/devel/binary/cuda/11.1', '11.1', True)]
+Link args for CUDA module 'cudart' are ['-lcudart']
+Link args for CUDA module 'nvrtc' are ['-lnvrtc']
+Run-time dependency CUDA (modules: cudart, nvrtc) found: YES 11.1 (/pawsey/centos7.6/devel/binary/cuda/11.1)
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.27.1)
+Determining dependency 'bifrost' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib/pkgconfig:/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/0:/pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/wcslib/7.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cfitsio/3.48/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/pal/0.9.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/erfa/2.0.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/libxml2/2.9.12/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/gsl/2.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/fftw/3.3.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/aoflagger/3.1.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/gcc/4.8.5/libsigcpp/2.3.1/lib/pkgconfig:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/ucx-gpu/1.6.0/lib/pkgconfig
+Called `/usr/bin/pkg-config --modversion bifrost` -> 0
+0.9.0
+PKG_CONFIG_PATH: /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib/pkgconfig:/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/0:/pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/wcslib/7.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cfitsio/3.48/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/pal/0.9.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/erfa/2.0.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/libxml2/2.9.12/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/gsl/2.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/fftw/3.3.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/aoflagger/3.1.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/gcc/4.8.5/libsigcpp/2.3.1/lib/pkgconfig:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/ucx-gpu/1.6.0/lib/pkgconfig
+Called `/usr/bin/pkg-config --cflags bifrost` -> 0
+-I/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include
+PKG_CONFIG_PATH: /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib/pkgconfig:/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/0:/pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/wcslib/7.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cfitsio/3.48/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/pal/0.9.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/erfa/2.0.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/libxml2/2.9.12/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/gsl/2.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/fftw/3.3.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/aoflagger/3.1.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/gcc/4.8.5/libsigcpp/2.3.1/lib/pkgconfig:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/ucx-gpu/1.6.0/lib/pkgconfig
+Called `/usr/bin/pkg-config --libs bifrost` -> 0
+-L/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib -lbifrost
+PKG_CONFIG_PATH: /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib/pkgconfig:/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/0:/pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/wcslib/7.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cfitsio/3.48/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/pal/0.9.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/erfa/2.0.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/libxml2/2.9.12/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/gsl/2.6/lib/pkgconfig:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/fftw/3.3.8/lib/pkgconfig:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/aoflagger/3.1.0/lib/pkgconfig:/group/director2183/software/centos7.6/apps/gcc/4.8.5/libsigcpp/2.3.1/lib/pkgconfig:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/ucx-gpu/1.6.0/lib/pkgconfig
+Called `/usr/bin/pkg-config --libs bifrost` -> 0
+-L/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib -lbifrost
+Running compile:
+Working directory:  /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmpg8qhpnds
+Command line:  g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmpg8qhpnds/testfile.cpp -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmpg8qhpnds/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmplau3s1iz
+Command line:  g++ /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmplau3s1iz/testfile.cpp -o /group/director2183/dancpr/src/bf_plugins/btcc/build/meson-private/tmplau3s1iz/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/
+programs: =/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/bin/
+libraries: =/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib/../lib64/:/pawsey/intel/19.0.5/tbb/lib/intel64/gcc4.7/x86_64-pc-linux-gnu/8.3.0/:/pawsey/intel/19.0.5/tbb/lib/intel64/gcc4.7/../lib64/:/pawsey/intel/19.0.5/lib/intel64/x86_64-pc-linux-gnu/8.3.0/:/pawsey/intel/19.0.5/lib/intel64/../lib64/:/pawsey/intel/19.0.5/mkl/lib/intel64/x86_64-pc-linux-gnu/8.3.0/:/pawsey/intel/19.0.5/mkl/lib/intel64/../lib64/:/pawsey/centos7.6/devel/binary/cuda/11.1/extras/CUPTI/lib64/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/binary/cuda/11.1/extras/CUPTI/lib64/../lib64/:/pawsey/centos7.6/devel/binary/cuda/11.1/lib64/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/binary/cuda/11.1/lib64/../lib64/:/pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/lib/../lib64/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cfitsio/3.48/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cfitsio/3.48/lib/../lib64/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/pal/0.9.8/lib/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/pal/0.9.8/lib/../lib64/:/group/director2183/software/centos7.6/apps/lua/5.3/lib64/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/software/centos7.6/apps/lua/5.3/lib64/../lib64/:/group/director2183/software/centos7.6/apps/lua/5.3/lib/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/software/centos7.6/apps/lua/5.3/lib/../lib64/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/cuda/10.1/idg-gpu/0.7/lib/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/cuda/10.1/idg-gpu/0.7/lib/../lib64/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/boost/1.76.0/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/boost/1.76.0/lib/../lib64/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/gsl/2.6/lib/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/gsl/2.6/lib/../lib64/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/casacore/3.2.1/lib/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/casacore/3.2.1/lib/../lib64/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/fftw/3.3.8/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/fftw/3.3.8/lib/../lib64/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/cuda/10.1/hdf5-parallel-gpu/1.10.5/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/cuda/10.1/hdf5-parallel-gpu/1.10.5/lib/../lib64/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/aoflagger/3.1.0/lib/x86_64-pc-linux-gnu/8.3.0/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/aoflagger/3.1.0/lib/../lib64/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cuda/10.1/openmpi-ucx-gpu/4.0.2/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cuda/10.1/openmpi-ucx-gpu/4.0.2/lib/../lib64/:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/gdrcopy-gpu/1.3/lib64/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/gdrcopy-gpu/1.3/lib64/../lib64/:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/ucx-gpu/1.6.0/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/ucx-gpu/1.6.0/lib/../lib64/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/hdf5/1.10.5/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/hdf5/1.10.5/lib/../lib64/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/szip/2.1.1/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/szip/2.1.1/lib/../lib64/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/lib/x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/lib/../lib64/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../x86_64-pc-linux-gnu/8.3.0/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/x86_64-pc-linux-gnu/8.3.0/:/lib/../lib64/:/usr/lib/x86_64-pc-linux-gnu/8.3.0/:/usr/lib/../lib64/:/group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/lib/:/pawsey/intel/19.0.5/tbb/lib/intel64/gcc4.7/:/pawsey/intel/19.0.5/lib/intel64/:/pawsey/intel/19.0.5/mkl/lib/intel64/:/pawsey/centos7.6/devel/binary/cuda/11.1/extras/CUPTI/lib64/:/pawsey/centos7.6/devel/binary/cuda/11.1/lib64/:/pawsey/centos7.6/apps/gcc/4.8.5/python/3.6.3/lib/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cfitsio/3.48/lib/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/pal/0.9.8/lib/:/group/director2183/software/centos7.6/apps/lua/5.3/lib64/:/group/director2183/software/centos7.6/apps/lua/5.3/lib/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/cuda/10.1/idg-gpu/0.7/lib/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/boost/1.76.0/lib/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/gsl/2.6/lib/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/casacore/3.2.1/lib/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/fftw/3.3.8/lib/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/openmpi-ucx-gpu/4.0.2/cuda/10.1/hdf5-parallel-gpu/1.10.5/lib/:/group/director2183/software/centos7.6/apps/cascadelake/gcc/8.3.0/aoflagger/3.1.0/lib/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/cuda/10.1/openmpi-ucx-gpu/4.0.2/lib/:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/gdrcopy-gpu/1.3/lib64/:/pawsey/centos7.6/devel/gcc/4.8.5/cuda/10.1/ucx-gpu/1.6.0/lib/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/hdf5/1.10.5/lib/:/pawsey/centos7.6/devel/cascadelake/gcc/8.3.0/szip/2.1.1/lib/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/lib/:/pawsey/centos7.6/devel/gcc/4.8.5/gcc/8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency bifrost found: YES 0.9.0
+Library libtcc found: YES
+Running command: /group/director2183/dancpr/src/bf_plugins/btcc/./generate_wrapper.py src/btcc -o /group/director2183/dancpr/src/bf_plugins/btcc/build
+--- stdout ---
+Python 3.6.3
+Generating btcc_generated.py...
+
+--- stderr ---
+INFO: Status: Preprocessing /tmp/tmpimxzt9rg.h
+INFO: Status: gcc -E -U __GNUC__ -dD -I"." -I"/group/director2183/dancpr/src/bf_plugins/btcc" "-Dinline=" "-D__inline__=" "-D__extension__=" "-D__const=const" "-D__asm__(x)=" "-D__asm(x)=" "-DCTYPESGEN=1" "/tmp/tmpimxzt9rg.h"
+INFO: Status: Parsing /tmp/tmpimxzt9rg.h
+INFO: Status: Processing description list.
+INFO: Status: Writing to /group/director2183/dancpr/src/bf_plugins/btcc/build/btcc_generated.py.
+INFO: Status: Wrapping complete.
+
+
+Message: Python 3.6.3
+Generating btcc_generated.py...
+Build targets in project: 1
+
+Found ninja-1.8.2 at /group/director2183/dancpr/src/ninja

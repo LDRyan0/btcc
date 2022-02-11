@@ -26,10 +26,9 @@ There are several conditional compliation constants included in btcc.cu:
 * `TIME_CORR`: write all correlation times (ms) to `cuda_results.csv`
 
 
-### Using BTCC
+### Using BTCC in Python
 
 ```
-python
 from btcc import Btcc
 
 tcc = Btcc()

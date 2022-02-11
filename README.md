@@ -6,13 +6,13 @@ A [Bifrost](https://github.com/telegraphic/bifrost) wrapper for the [Tensor-Core
 
 To build BTCC:
 
-1) Install appropriate dependancies
-  * Bifrost (https://github.com/telegraphic/bifrost)
-  * Tensor-Core Correlator (https://git.astron.nl/RD/tensor-core-correlator)
-  * Meson build system (https://github.com/mesonbuild/meson)
-2) Setup your build environment (on topaz, run `source setup_env.sh`).
-3) Ensure correct paths to dependancies are setup in `meson.build'
-4) Compile with meson by running:
+1. Install appropriate dependancies
+   1. Bifrost (https://github.com/telegraphic/bifrost)
+   2. Tensor-Core Correlator (https://git.astron.nl/RD/tensor-core-correlator)
+   3. Meson build system (https://github.com/mesonbuild/meson)
+2. Setup your build environment (on topaz, run `source setup_env.sh`).
+3. Ensure correct paths to dependancies are setup in `meson.build`
+4. Compile with meson by running:
 
 ```
 meson setup build

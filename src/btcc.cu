@@ -53,10 +53,10 @@
 
 // disable ALL sanity checks 
 // ONLY USE FOR SLIGHT INCREASE IN PERFORMANCE ON KNOWN STABLE BUILDS
-#define NO_CHECKS
+// #define NO_CHECKS
 
 // enable timing of the .launchAsync() function
-#define TIME_CORR
+// #define TIME_CORR
 
 #ifdef TIME_CORR
 #include <fstream>

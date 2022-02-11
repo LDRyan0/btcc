@@ -886,31 +886,7 @@ enum_BFdtype_ = c_int# /group/director2183/dancpr/software/centos7.6/apps/cascad
 BFdtype = enum_BFdtype_# /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include/bifrost/array.h: 91
 
 # /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include/bifrost/array.h: 128
-class struct_BFarray_(Structure):
-    pass
-
-struct_BFarray_.__slots__ = [
-    'data',
-    'space',
-    'dtype',
-    'ndim',
-    'shape',
-    'strides',
-    'immutable',
-    'big_endian',
-    'conjugated',
-]
-struct_BFarray_._fields_ = [
-    ('data', POINTER(None)),
-    ('space', BFspace),
-    ('dtype', BFdtype),
-    ('ndim', c_int),
-    ('shape', c_long * int(BF_MAX_DIMS)),
-    ('strides', c_long * int(BF_MAX_DIMS)),
-    ('immutable', BFbool),
-    ('big_endian', BFbool),
-    ('conjugated', BFbool),
-]
+from bifrost.libbifrost_generated import struct_BFarray_
 
 BFarray = struct_BFarray_# /group/director2183/dancpr/software/centos7.6/apps/cascadelake/gcc/8.3.0/bifrost/0.0.3/include/bifrost/array.h: 128
 

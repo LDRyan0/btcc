@@ -41,4 +41,4 @@ See `validate.py`, `benchmark.py` and `eda.py` for example usages of BTCC.
 
 Example Performance (Tesla V100)|  Example correlation matrix | Example image 
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/86461236/153545168-1b854b20-b004-4778-a541-ab9fe5a31dac.png" height="250"/> | <img src="https://user-images.githubusercontent.com/86461236/153545216-5a405dac-7889-48b2-a47d-4470080591ff.png" height="250"/> | <img src="https://user-images.githubusercontent.com/86461236/153545271-e660153b-ef2b-4dee-80ce-f99940ae9df3.JPG" height="250"/>
+<img src="https://user-images.githubusercontent.com/86461236/153545168-1b854b20-b004-4778-a541-ab9fe5a31dac.png" height="200"/> | <img src="https://user-images.githubusercontent.com/86461236/153545216-5a405dac-7889-48b2-a47d-4470080591ff.png" height="200"/> | <img src="https://user-images.githubusercontent.com/86461236/153545271-e660153b-ef2b-4dee-80ce-f99940ae9df3.JPG" height="200"/>

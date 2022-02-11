@@ -1,14 +1,18 @@
 ## btcc
 
-btcc
+A [Bifrost](https://github.com/telegraphic/bifrost) wrapper for the [Tensor-Core Correlator](https://git.astron.nl/RD/tensor-core-correlator).
 
-### Compiling your plugin
+### Compiling BTCC
 
-To build your plugin:
+To build BTCC:
 
-0) Setup your build environment (on topaz, run `source setup_env.sh`).
-1) Add your source code to `src/`. Names must be `btcc.h` and `btcc.cu`.
-2) compile with meson by running:
+1. Install appropriate dependancies
+   1. Bifrost (https://github.com/telegraphic/bifrost)
+   2. Tensor-Core Correlator (https://git.astron.nl/RD/tensor-core-correlator)
+   3. Meson build system (https://github.com/mesonbuild/meson)
+2. Setup your build environment (on topaz, run `source setup_env.sh`).
+3. Ensure correct paths to dependancies are setup in `meson.build`
+4. Compile with meson by running:
 
 ```
 meson setup build
@@ -16,9 +20,21 @@ cd build
 meson compile
 ```
 
-### Using your plugin
+There are several conditional compliation constants included in btcc.cu:
+* `DCP_DEBUG`: enables full debugging output
+* `NO_CHECKS`: removes all sanity checks
+* `TIME_CORR`: write all correlation times (ms) to `cuda_results.csv`
 
-```python
-from build import btcc_generated as _bf
-_bf.ExampleFunction(data_in.as_BFarray(), data_out.as_BFarray())
+
+### Using BTCC
+
 ```
+python
+from btcc import Btcc
+
+tcc = Btcc()
+tcc.init(nbits, ntime, nchan, nant, npol)
+tcc.execute(tcc_input, tcc_output, True)
+```
+
+See `validate.py`, `benchmark.py` and `eda.py` for example usages of BTCC.

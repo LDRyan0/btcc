@@ -1,6 +1,6 @@
 ## btcc
 
-A [Bifrost](https://github.com/telegraphic/bifrost) wrapper for the [Tensor-Core Correlator](https://git.astron.nl/RD/tensor-core-correlator).
+A [Bifrost](https://github.com/ledatelescope/bifrost) wrapper for the [Tensor-Core Correlator](https://git.astron.nl/RD/tensor-core-correlator).
 
 ### Compiling BTCC
 

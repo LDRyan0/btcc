@@ -28,7 +28,7 @@ There are several conditional compliation constants included in btcc.cu:
 
 ### Using BTCC in Python
 
-```
+```Python
 from btcc import Btcc
 
 tcc = Btcc()
